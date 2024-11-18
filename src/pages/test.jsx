@@ -1,5 +1,6 @@
 import { GiCrackedAlienSkull } from "react-icons/gi";
 import Question from "../components/Question";
+import ProfileCard from "../components/ProfileCard"
 
 function Test(){
     const sports = "football"
@@ -16,9 +17,13 @@ function Test(){
         <button><GiCrackedAlienSkull size={300} style={{backgroundColor: "red", color: "black"}}/></button>
         <Question title="Murders only happen in the building" info={info}/>
 
+        <ProfileCard profileImage="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDwycVzCsWaZx5AaCTeqz6e8qLbt8UaQz7g&s" firstName="John" lastName="Doe" email="johndoe@example.com" socialLinks={{ github: "https://github.com/johndoe", instagram: "https://instagram.com/johndoe", facebook: "https://facebook.com/johndoe" }} />
+
         {
             triggered.length > 0 ? <h1>Hello Data</h1> : <h1>Nothing Found</h1>
         }
+
+
     </>
     )
 }
